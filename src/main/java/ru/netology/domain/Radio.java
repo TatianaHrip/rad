@@ -6,8 +6,6 @@ public class Radio {
 
     private final int maxStation = 9;
     private final int minStation = 0;
-    private final int maxVolume = 10;
-    private final int minVolume = 0;
 
     public int getCurrentStation() {
         return currentStation;
@@ -28,10 +26,12 @@ public class Radio {
     }
 
     public void setCurrentVolume(int currentVolume) {
-        if(currentVolume>maxVolume){
+        int maxVolume = 10;
+        if(currentVolume> maxVolume){
             return;
         }
-        if(currentVolume<minVolume){
+        int minVolume = 0;
+        if(currentVolume< minVolume){
             return;
         }
         this.currentVolume = currentVolume;
