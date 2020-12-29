@@ -63,7 +63,7 @@ class RadioTest {
             value = {
                     "'Middle volume'; 5; 4",
                     "'Go min volume'; 1; 0",
-                    "'Less minimum volume'; 10; 0"
+                    "'Less minimum volume'; 10; 9"
             }
             , delimiter = ';'
     )
